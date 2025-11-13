@@ -12,4 +12,5 @@ router.post("/create", isAuthenticated, upload.single("image"), createBlog);
 router.get("/all", allBlogs);
 router.delete("/delete/:id", isAuthenticated, deleteBlog);
 router.get("/user/blogs", isAuthenticated, userBlogs);
+
 export default router;
